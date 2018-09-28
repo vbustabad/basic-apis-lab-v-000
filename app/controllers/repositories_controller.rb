@@ -18,8 +18,8 @@ class RepositoriesController < ApplicationController
        @error = body["meta"]["errorDetail"]
      end
 
-     rescue Faraday::ConnectionFailed
-      @error = "There was a timeout. Please try again."
-     end
-     render :search
+   rescue Faraday::ConnectionFailed
+    @error = "There was a timeout. Please try again."
+   end
+   render :search
   end
