@@ -9,8 +9,8 @@ class RepositoriesController < ApplicationController
        req.params['client_id'] = client_id
        req.params['client_secret'] = client_secret
        req.params['name'] = params[:name]
+       req.params['html_url'] = params[:html_url]
        req.params['description'] = params[:description]
-       req.params['url'] = params[:url]
      end
 
      body = JSON.parse(@resp.body)
