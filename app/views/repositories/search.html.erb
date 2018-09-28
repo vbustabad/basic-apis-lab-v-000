@@ -11,11 +11,11 @@
     <p><%= @error %></p>
   <% elsif @items %>
     <ul>
-    <% @items.map do |item| %>
+    <% @items.each do |item| %>
       <li>
-        <%= ["name"] %><br>
-        <%= ["html_url"] %><br>
-        <%= ["description"] %>
+        <%= items["name"] %><br>
+        <%= items["html_url"] %><br>
+        <%= items["description"] %>
       </li>
     <% end %>
     </ul>
