@@ -13,9 +13,9 @@
     <ul>
     <% @items.each do |item| %>
       <li>
-        <%= item["name"] %><br>
-        <%= item["html_url"] %><br>
-        <%= item["description"] %>
+        <%= Name: item["name"] %>
+        <%= URL: <a href=item["html_url"]>Link</a> %>
+        <%= Description: item["description"] %>
       </li>
     <% end %>
     </ul>
